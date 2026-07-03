@@ -288,3 +288,197 @@ nav.nav-bar a.active::after {
   border-left: 3px solid var(--glow-amber);
   border-radius: 6px;
 }
+/* ---------- Product grid (Products page — uses display:grid) ---------- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-soft);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-glow);
+}
+
+.product-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background-color: var(--bg-panel-light);
+}
+
+.product-info {
+  padding: 1.2rem 1.3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.product-info .scent-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.7rem;
+}
+
+.product-info .price {
+  color: var(--glow-amber);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.product-info .btn-primary {
+  margin-top: auto;
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 0.85rem;
+}
+
+/* cart summary bar on products page */
+.cart-summary {
+  position: sticky;
+  bottom: 1.2rem;
+  margin: 2.5rem auto 0;
+  max-width: 320px;
+  background-color: var(--bg-panel-light);
+  border: 1px solid var(--glow-amber);
+  border-radius: 999px;
+  padding: 0.8rem 1.4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-glow);
+}
+
+/* ---------- Contact page ---------- */
+.contact-wrap {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1 1 360px;
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-soft);
+  padding: 2rem;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.35rem;
+  color: var(--text-muted);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  margin-bottom: 1.2rem;
+  background-color: var(--bg-deep);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  color: var(--text-cream);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--glow-amber);
+}
+
+#formResponse {
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  color: var(--glow-amber);
+  display: none;
+}
+
+.contact-info {
+  flex: 1 1 300px;
+}
+
+.contact-info img {
+  border-radius: var(--radius-soft);
+  margin: 1.4rem 0;
+}
+
+.info-row {
+  margin-bottom: 1rem;
+}
+
+.info-row span.label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--glow-amber);
+  margin-bottom: 0.2rem;
+}
+
+/* ---------- Footer ---------- */
+footer.site-footer {
+  border-top: 1px solid var(--border-soft);
+  padding: 2.4rem 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+footer.site-footer .footer-links {
+  display: flex;
+  gap: 1.4rem;
+}
+
+footer.site-footer .footer-links a {
+  color: var(--text-muted);
+  transition: color 0.25s ease;
+}
+
+footer.site-footer .footer-links a:hover {
+  color: var(--glow-amber);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  header.site-header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  nav.nav-bar ul {
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+}
