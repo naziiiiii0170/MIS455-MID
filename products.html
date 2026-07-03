@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- character encoding and responsive viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Ember & Wick</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- shared stylesheet for all three pages -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Nazifa Afroze - 2221823 -->
+
+  <!-- ===== HEADER (same on all 3 pages) ===== -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="flame"></span>
+      Ember &amp; Wick
+    </div>
+    <!-- navigation bar with hover effect, required on all pages -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE INTRO ===== -->
+  <section class="section" style="padding-bottom:1rem;">
+    <p class="section-eyebrow">The Collection</p>
+    <h1 style="margin:0.5rem 0 1rem; font-size:2.1rem;">Six Scents, Poured by Hand</h1>
+    <p>
+      Every candle below is poured in 8 oz reusable glass jars with a cotton wick, rated for roughly
+      45–50 hours of clean burn time. Prices include the jar — keep it, refill it, or recycle it once
+      the wax runs out.
+    </p>
+    <p style="margin-top:0.8rem;">
+      Not sure where to start? Amber Dusk and Vanilla Hearth are our best-sellers for anyone new to the
+      shop, while Cedar &amp; Smoke and Sea Salt Driftwood tend to suit people who prefer a cooler, less
+      sweet scent profile.
+    </p>
+  </section>
+
+  <!-- ===== PRODUCT GRID — uses display:grid ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/product-amber-dusk.svg" alt="Amber Dusk soy candle in an amber-coloured wax jar">
+        <div class="product-info">
+          <h3>Amber Dusk</h3>
+          <p class="scent-note">Warm amber, sandalwood, a touch of vanilla</p>
+          <p class="price">$24.00</p>
+          <!-- BUTTON: onclick calls addToCart() with this candle's name -->
+          <button class="btn btn-primary" onclick="addToCart('Amber Dusk')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/product-cedar-smoke.svg" alt="Cedar and Smoke soy candle in a dark brown wax jar">
+        <div class="product-info">
+          <h3>Cedar &amp; Smoke</h3>
+          <p class="scent-note">Cedarwood, smoked oak, dried moss</p>
+          <p class="price">$26.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Cedar & Smoke')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/product-midnight-bloom.svg" alt="Midnight Bloom soy candle in a deep purple wax jar">
+        <div class="product-info">
+          <h3>Midnight Bloom</h3>
+          <p class="scent-note">Night jasmine, violet, soft musk</p>
+          <p class="price">$25.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Midnight Bloom')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/product-spiced-fig.svg" alt="Spiced Fig soy candle in a deep red wax jar">
+        <div class="product-info">
+          <h3>Spiced Fig</h3>
+          <p class="scent-note">Ripe fig, clove, brown sugar</p>
+          <p class="price">$24.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Spiced Fig')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/product-vanilla-hearth.svg" alt="Vanilla Hearth soy candle in a cream-coloured wax jar">
+        <div class="product-info">
+          <h3>Vanilla Hearth</h3>
+          <p class="scent-note">Bourbon vanilla, toasted oat, warm milk</p>
+          <p class="price">$23.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Vanilla Hearth')">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/product-sea-salt.svg" alt="Sea Salt Driftwood soy candle in a blue-green wax jar">
+        <div class="product-info">
+          <h3>Sea Salt Driftwood</h3>
+          <p class="scent-note">Sea salt, driftwood, cool linen</p>
+          <p class="price">$25.00</p>
+          <button class="btn btn-primary" onclick="addToCart('Sea Salt Driftwood')">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- running cart total, updated live by script.js -->
+    <div class="cart-summary">
+      Cart: <strong id="cartCount">0</strong> item(s) &nbsp;•&nbsp;
+      <span id="cartMessage">Nothing added yet</span>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (same on all 3 pages) ===== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Ember &amp; Wick Candle Co. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- shared JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

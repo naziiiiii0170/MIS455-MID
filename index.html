@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- character encoding and responsive viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember & Wick — Hand-Poured Soy Candles</title>
+  <!-- Google Fonts: display serif for headings, humanist sans for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- shared stylesheet for all three pages -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Nazifa Afroze - 2221823 -->
+
+  <!-- ===== HEADER (same on all 3 pages) ===== -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="flame"></span>
+      Ember &amp; Wick
+    </div>
+    <!-- navigation bar with hover effect, required on all pages -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION — uses display:flex ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="section-eyebrow">Hand-Poured in Small Batches</p>
+      <h1>Light Up Your Quietest Moments</h1>
+      <p>
+        Ember &amp; Wick makes slow-burning soy candles designed for the hour after the day winds down —
+        scented with warm, honest notes and poured by hand in a small studio, not a factory line.
+      </p>
+      <div class="hero-actions">
+        <!-- BUTTON 1: uses onclick to run toggleReadMore() from script.js -->
+        <button class="btn btn-primary" id="readMoreBtn" onclick="toggleReadMore()">Read Our Story</button>
+        <a href="products.html" class="btn btn-outline">Browse Candles</a>
+      </div>
+      <!-- hidden block revealed by the Read More button -->
+      <div id="readMoreBlock">
+        <p>
+          We started Ember &amp; Wick in 2021 with two pots, a kitchen table, and a stubborn belief that
+          candles should smell like something you actually remember — cedar after rain, a fig tree in
+          August, salt air off an evening tide. Every candle is still poured, labelled, and packed by hand.
+        </p>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero-candle.svg" alt="Illustration of a glowing amber soy candle in a dark glass jar" width="360">
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section">
+    <div class="section-heading">
+      <p class="section-eyebrow">Our Craft</p>
+      <h2>Why our candles burn differently</h2>
+    </div>
+    <div style="display:flex; gap:2.5rem; flex-wrap:wrap; align-items:center;">
+      <img src="images/about-workshop.svg" alt="Illustration of candles lined up on a wooden workbench" style="flex:1 1 320px; border-radius:10px;">
+      <div style="flex:1 1 320px;">
+        <p>
+          Most mass-produced candles use paraffin wax, which burns fast and releases a heavier, sootier smoke.
+          We use 100% natural soy wax instead, which burns roughly 30–40% longer per jar and keeps the
+          fragrance honest instead of chemical.
+        </p>
+        <p style="margin-top:1rem;">
+          Each scent is developed over weeks of test pours before it ever reaches the shop — we adjust wick
+          size, fragrance load, and pour temperature by hand until the burn is clean edge-to-edge.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURE STRIP — also uses display:flex ===== -->
+  <section class="section">
+    <div class="section-heading">
+      <p class="section-eyebrow">What You Can Expect</p>
+      <h2>Three promises on every jar</h2>
+    </div>
+    <div class="feature-strip">
+      <div class="feature-card">
+        <img src="images/icon-leaf.svg" alt="Leaf icon representing natural soy wax">
+        <h3>100% Natural Soy Wax</h3>
+        <p>No paraffin, no synthetic fillers — just soy wax sourced from American growers.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/icon-hand.svg" alt="Hand icon representing hand-pouring">
+        <h3>Hand-Poured in Small Batches</h3>
+        <p>Every jar is poured, trimmed, and inspected individually — never on an assembly line.</p>
+      </div>
+      <div class="feature-card">
+        <img src="images/icon-eco.svg" alt="Box icon representing eco-friendly packaging">
+        <h3>Eco-Friendly Packaging</h3>
+        <p>Recycled kraft boxes, soy-based ink labels, and reusable glass jars once the wax is gone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (same on all 3 pages) ===== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Ember &amp; Wick Candle Co. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- shared JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
