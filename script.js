@@ -37,4 +37,26 @@ function addToCart(productName) {
   // find the message element and confirm which candle was added
   const cartMessage = document.getElementById("cartMessage");
   cartMessage.textContent = productName + " added to your cart.";
+} 
+// ---------- CONTACT PAGE: Send Message button ----------
+function sendMessage(event) {
+  // stop the form from actually submitting/reloading the page
+  event.preventDefault();
+
+  // read the values typed into the form fields
+  const nameValue = document.getElementById("nameInput").value;
+  const emailValue = document.getElementById("emailInput").value;
+
+  // grab the response box that will show the confirmation text
+  const responseBox = document.getElementById("formResponse");
+
+  // simple check so the confirmation feels personal when possible
+  if (nameValue.trim() === "" || emailValue.trim() === "") {
+    responseBox.textContent = "Please fill in your name and email before sending.";
+  } else {
+    responseBox.textContent = "Thank you, " + nameValue + "! Your message has been received — we will reply to " + emailValue + " within one business day.";
+  }
+
+  // make sure the response box is visible after the click
+  responseBox.style.display = "block";
 }
