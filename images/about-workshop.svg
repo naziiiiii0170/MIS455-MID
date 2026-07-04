@@ -1,0 +1,21 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tableTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3352"/>
+      <stop offset="100%" stop-color="#33223a"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="300" fill="#241726"/>
+  <rect x="0" y="210" width="500" height="90" fill="url(#tableTop)"/>
+  <!-- three jars of differing heights lined up on the workbench -->
+  <rect x="80" y="140" width="70" height="90" rx="8" fill="#c9713f"/>
+  <rect x="180" y="110" width="70" height="120" rx="8" fill="#e8a33d"/>
+  <rect x="280" y="150" width="70" height="80" rx="8" fill="#5b4a7a"/>
+  <rect x="380" y="125" width="60" height="105" rx="8" fill="#8a3b3b"/>
+  <!-- small flames -->
+  <path d="M115 120 C105 132 108 142 115 146 C122 142 125 132 115 120 Z" fill="#fbe3ad"/>
+  <path d="M215 90 C205 102 208 112 215 116 C222 112 225 102 215 90 Z" fill="#fbe3ad"/>
+  <path d="M315 130 C305 142 308 152 315 156 C322 152 325 142 315 130 Z" fill="#fbe3ad"/>
+  <path d="M410 105 C400 117 403 127 410 131 C417 127 420 117 410 105 Z" fill="#fbe3ad"/>
+  <circle cx="250" cy="60" r="70" fill="#e8a33d" opacity="0.08"/>
+</svg>

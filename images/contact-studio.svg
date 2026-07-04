@@ -1,0 +1,13 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="#33223a"/>
+  <!-- storefront shape -->
+  <rect x="60" y="90" width="380" height="170" fill="#3f2a47" stroke="#f6ede1" stroke-opacity="0.1"/>
+  <rect x="90" y="130" width="140" height="130" fill="#241726"/>
+  <rect x="270" y="130" width="140" height="130" fill="#241726"/>
+  <rect x="230" y="150" width="40" height="110" fill="#e8a33d"/>
+  <rect x="60" y="70" width="380" height="24" fill="#c9713f"/>
+  <text x="250" y="87" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#241726">Ember &amp; Wick Studio</text>
+  <!-- window glow candles -->
+  <circle cx="160" cy="190" r="14" fill="#e8a33d" opacity="0.7"/>
+  <circle cx="340" cy="190" r="14" fill="#e8a33d" opacity="0.7"/>
+</svg>

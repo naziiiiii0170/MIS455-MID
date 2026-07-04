@@ -1,0 +1,20 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wax" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b5a4a"/>
+      <stop offset="100%" stop-color="#3c322b"/>
+    </linearGradient>
+    <linearGradient id="flame2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbe3ad"/>
+      <stop offset="60%" stop-color="#e8a33d"/>
+      <stop offset="100%" stop-color="#c9713f"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="#33223a"/>
+  <rect x="95" y="120" width="110" height="130" rx="10" fill="url(#wax)" stroke="#f6ede1" stroke-opacity="0.15"/>
+  <rect x="105" y="130" width="90" height="14" rx="7" fill="#f6ede1" fill-opacity="0.15"/>
+  <line x1="150" y1="120" x2="150" y2="90" stroke="#f6ede1" stroke-width="2"/>
+  <path d="M150 62 C138 86 142 104 150 112 C158 104 162 86 150 62 Z" fill="url(#flame2)"/>
+  <ellipse cx="150" cy="252" rx="90" ry="10" fill="#000000" opacity="0.2"/>
+  <text x="150" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#241726" fill-opacity="0.55">Cedar & Smoke</text>
+</svg>
