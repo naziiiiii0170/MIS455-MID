@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- character encoding and responsive viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Ember & Wick</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- shared stylesheet for all three pages -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Nazifa Afroze - 2221823 -->
 
+  <!-- ===== HEADER (same on all 3 pages) ===== -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="flame"></span>
+      Ember &amp; Wick
+    </div>
+    <!-- navigation bar with hover effect, required on all pages -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE INTRO ===== -->
+  <section class="section" style="padding-bottom:1rem;">
+    <p class="section-eyebrow">Get In Touch</p>
+    <h1 style="margin:0.5rem 0 1rem; font-size:2.1rem;">We'd Love to Hear From You</h1>
+    <p>
+      Questions about a scent, a wholesale order, or a candle that arrived damaged — send us a message
+      and a real person from the studio will get back to you, usually within one business day.
+    </p>
+    <p style="margin-top:0.8rem;">
+      Prefer to visit in person? Our small studio and seconds shop is open to walk-ins on weekend
+      afternoons — details are listed alongside the form below.
+    </p>
+  </section>
+
+  <!-- ===== CONTACT FORM + INFO ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="contact-wrap">
+
+      <!-- contact form -->
+      <form class="contact-form">
+        <label for="nameInput">Your Name</label>
+        <input type="text" id="nameInput" placeholder="e.g. Nazifa Afroze">
+
+        <label for="emailInput">Email Address</label>
+        <input type="email" id="emailInput" placeholder="you@example.com">
+
+        <label for="messageInput">Message</label>
+        <textarea id="messageInput" rows="5" placeholder="Tell us what's on your mind..."></textarea>
+
+        <!-- BUTTON: onclick calls sendMessage() from script.js, passing the click event -->
+        <button type="submit" class="btn btn-primary" onclick="sendMessage(event)">Send Message</button>
+
+        <!-- confirmation text shown after the button is clicked -->
+        <p id="formResponse"></p>
+      </form>
+
+      <!-- studio info + image -->
+      <div class="contact-info">
+        <div class="info-row">
+          <span class="label">Studio Address</span>
+          <p>14 Willow Lane, Riverside District, Dhaka</p>
+        </div>
+        <div class="info-row">
+          <span class="label">Email</span>
+          <p>hello@emberandwick.com</p>
+        </div>
+        <div class="info-row">
+          <span class="label">Weekend Hours</span>
+          <p>Saturday &amp; Sunday, 11 AM – 5 PM</p>
+        </div>
+        <img src="images/contact-studio.svg" alt="Illustration of the Ember and Wick storefront with two glowing windows">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (same on all 3 pages) ===== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Ember &amp; Wick Candle Co. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <!-- shared JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
